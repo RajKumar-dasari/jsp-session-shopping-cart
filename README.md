@@ -162,6 +162,46 @@ Planned improvements for a more advanced version include:
 * Servlet-based controllers
 * DAO layer
 
+## Commands used to run project
+Step 1: Install Requirements
+
+Install:
+
+Java JDK 26
+Apache Tomcat 11
+Git
+Step 2: Open PowerShell
+
+Open PowerShell and set the Java path:
+
+$env:JAVA_HOME = "C:\Program Files\Java\jdk-26.0.2"
+
+Check Java:
+
+java -version
+Step 3: Set Tomcat Path
+$env:CATALINA_HOME = "C:\Program Files\Apache Software Foundation\Tomcat 11.0"
+Step 4: Go to Tomcat
+cd "$env:CATALINA_HOME\bin"
+Step 5: Start Tomcat
+.\startup.bat
+Step 6: Open the Application
+
+Open your browser and visit:
+
+http://localhost:8080/SessionDrivenShoppingCart/
+Login Credentials
+Username: student
+Password: 1234
+
+Stop Tomcat
+
+To stop the server:
+
+cd "$env:CATALINA_HOME\bin"
+.\shutdown.bat.
+
+
 ## 🎯 Learning Objective
 
 The main objective of this project is to understand how **JSP and HTTP sessions** can be used to create an interactive Java web application with a basic e-commerce workflow.
